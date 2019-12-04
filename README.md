@@ -20,6 +20,7 @@
 > * [18\. 下面这段代码能否编译通过？如果可以，输出什么？](#18-%E4%B8%8B%E9%9D%A2%E8%BF%99%E6%AE%B5%E4%BB%A3%E7%A0%81%E8%83%BD%E5%90%A6%E7%BC%96%E8%AF%91%E9%80%9A%E8%BF%87%E5%A6%82%E6%9E%9C%E5%8F%AF%E4%BB%A5%E8%BE%93%E5%87%BA%E4%BB%80%E4%B9%88)
 > * [19\. 关于channel，下面语法正确的是（）](#19-%E5%85%B3%E4%BA%8Echannel%E4%B8%8B%E9%9D%A2%E8%AF%AD%E6%B3%95%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%98%AF)
 > * [20\. 下面这段代码输出什么？](#20-%E4%B8%8B%E9%9D%A2%E8%BF%99%E6%AE%B5%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E4%BB%80%E4%B9%88)
+>   [21\. 21-40题](https://github.com/yqchilde/Golang-Interview/blob/master/21-40.md)
 
 ## 1. 下面这段代码输出的内容：
 
