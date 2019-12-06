@@ -48,7 +48,7 @@ func defer_call()  {
     defer func() {fmt.Println("打印中")}()
     defer func() {fmt.Println("打印后")}()
 
-	panic("触发异常")
+    panic("触发异常")
 }
 ```
 
@@ -72,16 +72,16 @@ package main
 import "fmt"
 
 func main() {
-	slice := []int{0, 1, 2, 3}
-	m := make(map[int]*int)
+    slice := []int{0, 1, 2, 3}
+    m := make(map[int]*int)
 
-	for key, val := range slice {
-		m[key] = &val
-	}
+    for key, val := range slice {
+        m[key] = &val
+    }
 
-	for k, v := range m {
-		fmt.Println(k, "->", *v)
-	}
+    for k, v := range m {
+    fmt.Println(k, "->", *v)
+    }
 }
 ```
 
@@ -103,16 +103,16 @@ func main() {
 ```go
 // 1.
 func main() {
-	s := make([]int, 5)
-	s = append(s, 1, 2, 3)
-	fmt.Println(s)
+    s := make([]int, 5)
+    s = append(s, 1, 2, 3)
+    fmt.Println(s)
 }
 
 // 2.
 func main() {
-	s := make([]int, 0)
-	s = append(s, 1, 2, 3, 4)
-	fmt.Println(s)
+    s := make([]int, 0)
+    s = append(s, 1, 2, 3, 4)
+    fmt.Println(s)
 }
 ```
 
@@ -134,7 +134,7 @@ func main() {
 
 ```go
 func funcMui(x, y int) (sum int, error) {
-	return x, y, nil
+    return x, y, nil
 }
 ```
 
@@ -156,9 +156,9 @@ func funcMui(x, y int) (sum int, error) {
 
 ```go
 func main() {
-	list := new([]int)
-	list = append(list, 1)
-	fmt.Println(list)
+    list := new([]int)
+    list = append(list, 1)
+    fmt.Println(list)
 }
 ```
 
@@ -172,10 +172,10 @@ func main() {
 
 ```go
 func main() {
-	s1 := []int{1, 2, 3}
-	s2 := []int{4, 5}
-	s1 = append(s1, s2)
-	fmt.Println(s1)
+    s1 := []int{1, 2, 3}
+    s2 := []int{4, 5}
+    s1 = append(s1, s2)
+    fmt.Println(s1)
 }
 ```
 
@@ -189,12 +189,12 @@ func main() {
 
 ```go
 var (
-	size := 1024
-	max_size = size * 2
+    size := 1024
+    max_size = size * 2
 )
 
 func main() {
-	fmt.Println(size, max_size)
+    fmt.Println(size, max_size)
 }
 ```
 
@@ -212,31 +212,31 @@ func main() {
 
 ```go
 func main() {
-	sn1 := struct {
-		age  int
-		name string
+    sn1 := struct {
+        age  int
+        name string
 	}{age: 11, name: "qq"}
 	sn2 := struct {
-		age  int
-		name string
+        age  int
+        name string
 	}{age: 11, name: "11"}
 
-	if sn1 == sn2 {
-		fmt.Println("sn1 == sn2")
-	}
+    if sn1 == sn2 {
+        fmt.Println("sn1 == sn2")
+    }
 
-	sm1 := struct {
-		age int
-		m   map[string]string
-	}{age: 11, m: map[string]string{"a": "1"}}
-	sm2 := struct {
-		age int
-		m   map[string]string
-	}{age: 11, m: map[string]string{"a": "1"}}
+    sm1 := struct {
+        age int
+        m   map[string]string
+    }{age: 11, m: map[string]string{"a": "1"}}
+    sm2 := struct {
+        age int
+        m   map[string]string
+    }{age: 11, m: map[string]string{"a": "1"}}
 
-	if sm1 == sm2 {
-		fmt.Println("sm1 == sm2")
-	}
+    if sm1 == sm2 {
+        fmt.Println("sm1 == sm2")
+    }
 }
 ```
 
