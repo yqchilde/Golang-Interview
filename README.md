@@ -34,19 +34,19 @@
 
 ## 1. 下面这段代码输出的内容：
 
-``` go
+```go
 package main
 
 import "fmt"
 
 func main() {
-	defer_call()
+    defer_call()
 }
 
 func defer_call()  {
-	defer func() {fmt.Println("打印前")}()
-	defer func() {fmt.Println("打印中")}()
-	defer func() {fmt.Println("打印后")}()
+    defer func() {fmt.Println("打印前")}()
+    defer func() {fmt.Println("打印中")}()
+    defer func() {fmt.Println("打印后")}()
 
 	panic("触发异常")
 }
