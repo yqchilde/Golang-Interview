@@ -40,7 +40,7 @@ package main
 import "fmt"
 
 func main() {
-	defer_call()
+defer_call()
 }
 
 func defer_call()  {
