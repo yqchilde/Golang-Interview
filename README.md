@@ -282,10 +282,10 @@ type MyInt1 int
 type MyInt2 = int
 
 func main() {
-	var i int = 0
-	var i1 MyInt1 = i
-	var i2 MyInt2 = i
-	fmt.Println(i1, i2)
+    var i int = 0
+    var i1 MyInt1 = i
+    var i2 MyInt2 = i
+    fmt.Println(i1, i2)
 }
 ```
 
@@ -301,20 +301,20 @@ func main() {
 
 ```go
 func main() {
-	a := []int{7, 8, 9}
-	fmt.Printf("%+v\n", a)
-	ap(a)
-	fmt.Printf("%+v\n", a)
-	app(a)
-	fmt.Printf("%+v\n", a)
+    a := []int{7, 8, 9}
+    fmt.Printf("%+v\n", a)
+    ap(a)
+    fmt.Printf("%+v\n", a)
+    app(a)
+    fmt.Printf("%+v\n", a)
 }
 
 func ap(a []int) {
-	a = append(a, 10)
+    a = append(a, 10)
 }
 
 func app(a []int) {
-	a[0] = 1
+    a[0] = 1
 }
 ```
 
@@ -348,16 +348,16 @@ func app(a []int) {
 
 ```go
 const (
-	x = iota
-	_
-	y
-	z = "zz"
-	k
-	p = iota
+    x = iota
+    _
+    y
+    z = "zz"
+    k
+    p = iota
 )
 
 func main() {
-	fmt.Println(x, y, z, k, p)
+    fmt.Println(x, y, z, k, p)
 }
 ```
 
@@ -406,16 +406,16 @@ A错在没有写类型，C错在字符串的空值是 `""` 而不是nil。
 
 ```go
 func hello() []string {
-	return nil
+    return nil
 }
 
 func main() {
-	h:=hello
-	if h() ==nil {
-		fmt.Println("nil")
-	} else {
-		fmt.Println("not nil")
-	}
+    h:=hello
+    if h() ==nil {
+        fmt.Println("nil")
+    } else {
+        fmt.Println("not nil")
+    }
 }
 ```
 
@@ -433,21 +433,21 @@ func main() {
 
 ```go
 func GetValue() int {
-	return 1
+    return 1
 }
 
 func main() {
-	i := GetValue()
-	switch i.(type) {
-	case int:
-		fmt.Println("int")
-	case string:
-		fmt.Println("string")
-	case interface{}:
-		fmt.Println("interface")
-	default:
-		fmt.Println("unknown")
-	}
+    i := GetValue()
+    switch i.(type) {
+    case int:
+        fmt.Println("int")
+    case string:
+        fmt.Println("string")
+    case interface{}:
+        fmt.Println("interface")
+    default:
+        fmt.Println("unknown")
+    }
 }
 ```
 
@@ -479,13 +479,13 @@ A、B都是申明channel；C读取channel；写channel是必须带上值，所�
 
 ```go
 type person struct {
-	name string
+    name string
 }
 
 func main() {
-	var m map[person]int
-	p := person{"make"}
-	fmt.Println(m[p])
+    var m map[person]int
+    p := person{"make"}
+    fmt.Println(m[p])
 }
 ```
 
@@ -501,7 +501,7 @@ func main() {
 - B. 5
 - C. Compilation error
 
-```
+```go
 func hello(num ...int) {
     num[0] = 18
 }
@@ -541,7 +541,7 @@ func main() {
 
 ## 23. 下面这段代码输出什么？
 
-```
+```go
 package main
 
 import (  
@@ -573,7 +573,7 @@ func main() {
 
 ## 24. 下面这段代码输出什么？
 
-```
+```go
 func main() {
     a := [2]int{5, 6}
     b := [3]int{5, 6}
@@ -610,7 +610,7 @@ cap()，cap() 函数不适用 map
 
 ## 26. 下面这段代码输出什么？
 
-```
+```go
 func main() {  
     var i interface{}
     if i == nil {
@@ -633,7 +633,7 @@ func main() {
 
 ## 27. 下面这段代码输出什么？
 
-```
+```go
 func main() {  
     s := make(map[string]int)
     delete(s, "h")
@@ -662,7 +662,7 @@ func main() {
 
 ## 29. 下面这段代码输出什么？
 
-```
+```go
 func main() {  
     i := -5
     j := +5
@@ -682,7 +682,7 @@ func main() {
 
 ## 30. 下面这段代码输出什么？
 
-```
+```go
 type People struct{}
 
 func (p *People) ShowA() {
