@@ -34,13 +34,13 @@
 
 ## 1. 下面这段代码输出的内容：
 
-```go
+``` go
 package main
 
 import "fmt"
 
 func main() {
-defer_call()
+	defer_call()
 }
 
 func defer_call()  {
