@@ -134,7 +134,7 @@ func main() {
 
 ```go
 func funcMui(x, y int) (sum int, error) {
-    return x, y, nil
+    return x + y, nil
 }
 ```
 
