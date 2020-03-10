@@ -410,8 +410,8 @@ func hello() []string {
 }
 
 func main() {
-    h:=hello
-    if h() ==nil {
+    h := hello
+    if h == nil {
         fmt.Println("nil")
     } else {
         fmt.Println("not nil")
